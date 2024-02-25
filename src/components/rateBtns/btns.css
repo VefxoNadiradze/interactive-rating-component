@@ -1,0 +1,26 @@
+.rateBtnsParent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.rateBtn {
+  width: 3.19rem;
+  height: 3.19rem;
+  border-radius: 50%;
+  border: none;
+  background: rgb(38, 46, 56);
+  color: rgb(124, 135, 152);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: 0.01rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.rateBtn:hover {
+  color: rgb(255, 255, 255);
+  background: rgb(124, 135, 152);
+}

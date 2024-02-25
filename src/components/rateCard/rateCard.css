@@ -1,0 +1,58 @@
+.rateCard {
+  border-radius: 30px;
+  background: radial-gradient(
+    99% 99% at 50% 0%,
+    rgb(35, 42, 52),
+    rgb(24, 30, 39) 100%
+  );
+  max-width: 25.75rem;
+  padding: 32px;
+}
+
+.starDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: rgb(38, 46, 56);
+  margin-bottom: 30px;
+}
+
+.title {
+  color: rgb(255, 255, 255);
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 2.69rem;
+  margin-bottom: 16px;
+}
+
+.paragraph {
+  color: rgb(150, 159, 173);
+  font-family: Overpass;
+  font-size: 0.94rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin-bottom: 24px;
+}
+
+.submit {
+  width: 21.31rem;
+  height: 2.81rem;
+  border-radius: 1.41rem;
+  background: rgb(252, 118, 20);
+  border: none;
+  color: rgb(255, 255, 255);
+  font-size: 0.94rem;
+  font-weight: 700;
+  line-height: 1.44rem;
+  letter-spacing: 0.13rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.submit:hover {
+  background: rgb(255, 255, 255);
+  color: rgb(252, 118, 20);
+}
