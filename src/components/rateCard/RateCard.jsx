@@ -2,9 +2,9 @@ import "./rateCard.css";
 import starIcon from "/images/icon-star.svg";
 import Btns from "../rateBtns/Btns";
 
-export default function RateCard({ setIsSubmited }) {
+export default function RateCard({ setIsSubmited, setIsRate }) {
   return (
-    <div className="rateCard">
+    <div className="rateCard ">
       <div className="starDiv">
         <img src={starIcon} alt="star icon" />
       </div>
@@ -13,7 +13,7 @@ export default function RateCard({ setIsSubmited }) {
         Please let us know how we did with your support request. All feedback is
         appreciated to help us improve our offering!
       </p>
-      <Btns />
+      <Btns setIsRate={setIsRate} />
 
       <button onClick={() => setIsSubmited(true)} className="submit">
         submit

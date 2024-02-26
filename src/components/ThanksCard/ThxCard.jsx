@@ -1,14 +1,14 @@
 import "./thxCard.css";
 import illustrationImg from "/images/illustration-thank-you.svg";
 
-export default function ThxCard() {
+export default function ThxCard({ isRate }) {
   return (
     <div className="thxCard">
       <div className="ilustrationImgPar">
         <img src={illustrationImg} alt="ilustration image" />
       </div>
       <p className="selectedScore">
-        You selected <span className="selectedScore"></span> out of 5
+        You selected <span className="selectedScore">{isRate}</span> out of 5
       </p>
 
       <h2 className="thxTitle">Thank you!</h2>

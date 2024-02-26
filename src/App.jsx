@@ -5,8 +5,15 @@ import "./App.css";
 
 function App() {
   const [isSubmited, setIsSubmited] = useState(false);
+  const [isRate, setIsRate] = useState(0);
   return (
-    <>{isSubmited ? <ThxCard /> : <RateCard setIsSubmited={setIsSubmited} />}</>
+    <>
+      {isSubmited ? (
+        <ThxCard setIsRate={setIsRate} isRate={isRate} />
+      ) : (
+        <RateCard setIsSubmited={setIsSubmited} setIsRate={setIsRate} />
+      )}
+    </>
   );
 }
 
