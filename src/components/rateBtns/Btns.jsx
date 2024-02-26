@@ -16,12 +16,7 @@ export default function Btns({ setIsRate }) {
 
               setIsRate(nums);
             }}
-            style={
-              isTarget === index
-                ? { backgroundColor: "rgb(252, 118, 20)" }
-                : { backgroundColor: "rgb(38, 46, 56)" }
-            }
-            className="rateBtn"
+            className={isTarget === index ? "rateBtn oranged" : "rateBtn"}
           >
             {nums}
           </button>

@@ -4,7 +4,7 @@ import Btns from "../rateBtns/Btns";
 
 export default function RateCard({ setIsSubmited, setIsRate }) {
   return (
-    <div className="rateCard ">
+    <div className="rateCard">
       <div className="starDiv">
         <img src={starIcon} alt="star icon" />
       </div>
