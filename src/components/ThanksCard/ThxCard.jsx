@@ -8,7 +8,7 @@ export default function ThxCard() {
         <img src={illustrationImg} alt="ilustration image" />
       </div>
       <p className="selectedScore">
-        You selected <span className="selectedScore">4</span> out of 5
+        You selected <span className="selectedScore"></span> out of 5
       </p>
 
       <h2 className="thxTitle">Thank you!</h2>
