@@ -29,3 +29,10 @@
   background: rgb(252, 118, 20);
   color: rgb(255, 255, 255);
 }
+
+@media screen and (max-width: 347px) {
+  .rateBtn {
+    width: 2.7rem;
+    height: 2.7rem;
+  }
+}
