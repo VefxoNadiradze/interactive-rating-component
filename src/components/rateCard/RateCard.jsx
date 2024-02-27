@@ -2,7 +2,7 @@ import "./rateCard.css";
 import starIcon from "/images/icon-star.svg";
 import Btns from "../rateBtns/Btns";
 
-export default function RateCard({ setIsSubmited, setIsRate }) {
+export default function RateCard({ setIsSubmited, isRate, setIsRate }) {
   return (
     <div className="rateCard">
       <div className="starDiv">
@@ -15,7 +15,10 @@ export default function RateCard({ setIsSubmited, setIsRate }) {
       </p>
       <Btns setIsRate={setIsRate} />
 
-      <button onClick={() => setIsSubmited(true)} className="submit">
+      <button
+        onClick={() => (isRate > 0 ? setIsSubmited(true) : null)}
+        className="submit"
+      >
         submit
       </button>
     </div>

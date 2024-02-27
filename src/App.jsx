@@ -11,7 +11,11 @@ function App() {
       {isSubmited ? (
         <ThxCard setIsRate={setIsRate} isRate={isRate} />
       ) : (
-        <RateCard setIsSubmited={setIsSubmited} setIsRate={setIsRate} />
+        <RateCard
+          setIsSubmited={setIsSubmited}
+          isRate={isRate}
+          setIsRate={setIsRate}
+        />
       )}
     </>
   );
